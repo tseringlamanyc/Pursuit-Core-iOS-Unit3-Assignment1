@@ -67,6 +67,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="JAI-gv-yep"/>
+                    <connections>
+                        <outlet property="tableView" destination="Mkf-ej-ho5" id="OZk-w1-sge"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,6 +168,9 @@
                         <viewLayoutGuide key="safeArea" id="Ngm-bq-ZKm"/>
                     </view>
                     <navigationItem key="navigationItem" id="MrA-za-038"/>
+                    <connections>
+                        <outlet property="tableView" destination="E2W-gH-aue" id="tQU-yO-2ln"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MdJ-EO-wgp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

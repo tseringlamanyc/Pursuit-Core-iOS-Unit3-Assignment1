@@ -9,7 +9,9 @@
 import UIKit
 
 class PeopleViewController: UIViewController {
-
+    
+    @IBOutlet weak var tableView: UITableView!
+    
   override func viewDidLoad() {
     super.viewDidLoad()
     
