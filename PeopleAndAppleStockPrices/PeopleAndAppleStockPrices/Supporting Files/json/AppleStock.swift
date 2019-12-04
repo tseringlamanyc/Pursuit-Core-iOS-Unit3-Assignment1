@@ -8,3 +8,30 @@
 
 import Foundation
 
+struct Stocks: Codable {
+    
+    let date: String
+    let open: Double
+
+}
+
+extension Stocks {
+    
+    static func getStocks() -> [Stocks] {
+        var stocks = [Stocks]()
+        
+        guard let fileURL = Bundle.main.url(forResource: "applstockinfo", withExtension: "json") else {
+            fatalError()
+        }
+        
+        do {
+            let data = try Data(contentsOf: fileURL)
+            let stocksData = try JSONDecoder().decode([Stocks].self, from: data)
+            stocks = stocksData
+        } catch {
+            fatalError()
+        }
+
+        return stocks
+    }
+}

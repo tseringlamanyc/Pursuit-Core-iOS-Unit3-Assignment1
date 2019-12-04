@@ -12,10 +12,30 @@ class StocksViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    var stocks = [Stocks]() {
+        didSet {
+            tableView.reloadData()
+        }
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.dataSource = self
+        stocks = Stocks.getStocks()
+    }
+    
+}
 
+extension StocksViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return stocks.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "stockCell", for: indexPath)
+        let stock = stocks[indexPath.row]
+        cell.textLabel?.text = stock.date
+        cell.detailTextLabel?.text = "$\(stock.open.description)"
+        return cell
+    }
 }

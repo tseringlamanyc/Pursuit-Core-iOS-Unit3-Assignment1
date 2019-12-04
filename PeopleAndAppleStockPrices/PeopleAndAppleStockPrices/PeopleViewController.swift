@@ -21,16 +21,16 @@ class PeopleViewController: UIViewController {
     
     var currentSearch = ""
     
-  override func viewDidLoad() {
-    
-    super.viewDidLoad()
-    tableView.dataSource = self
-    users = UserData.getUsers()
-    
-  }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.dataSource = self
+        peopleSearch.delegate = self
+        users = UserData.getUsers()
+    }
     
     func searchPeople() {
-        users = UserData.getUsers().filter {$0.name.first.lowercased().contains(currentSearch.lowercased())}
+        users = UserData.getUsers().filter {$0.fullName.lowercased().contains(currentSearch.lowercased())}
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -39,8 +39,6 @@ class PeopleViewController: UIViewController {
         }
         detailVC.user = users[indexpath.row]
     }
-    
-
 }
 
 extension PeopleViewController: UITableViewDataSource {
@@ -64,8 +62,12 @@ extension PeopleViewController: UISearchBarDelegate {
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard !searchText.isEmpty else {
+            users = UserData.getUsers()
+            return
+        }
+        currentSearch = searchText
         searchPeople()
-       currentSearch = searchText
     }
 }
 

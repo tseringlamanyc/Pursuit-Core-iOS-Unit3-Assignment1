@@ -10,13 +10,11 @@ import UIKit
 
 class DetailPeopleViewController: UIViewController {
     
-    
     @IBOutlet weak var peopleImage: UIImageView!
     @IBOutlet weak var nameText: UILabel!
     @IBOutlet weak var emailText: UILabel!
     @IBOutlet weak var cityText: UILabel!
     
-
     var user: UserInfo!
     
     override func viewDidLoad() {
@@ -26,7 +24,5 @@ class DetailPeopleViewController: UIViewController {
         emailText.text = user.email
         cityText.text = user.location.state.capitalized
     }
-    
 
-    
 }
