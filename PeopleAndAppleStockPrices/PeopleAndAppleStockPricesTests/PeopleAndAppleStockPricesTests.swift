@@ -10,6 +10,9 @@ import XCTest
 
 class PeopleAndAppleStockPricesTests: XCTestCase {
 
+    func testPeopleData() {
+        let fileName = ""
+    }
  
 
 }

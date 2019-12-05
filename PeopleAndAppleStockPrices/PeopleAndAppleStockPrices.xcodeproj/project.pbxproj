@@ -3,16 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5218A7892397503A00200B0A /* PeopleAndAppleStockPricesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218A7882397503A00200B0A /* PeopleAndAppleStockPricesTests.swift */; };
+		5218A79923988A6D00200B0A /* PeopleAndAppleStockPricesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218A79823988A6D00200B0A /* PeopleAndAppleStockPricesUITests.swift */; };
+		5218A7A523988C4900200B0A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5218A7A423988C4900200B0A /* Podfile */; };
 		522D98A72396E61B00359003 /* DetailPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D98A62396E61B00359003 /* DetailPeopleViewController.swift */; };
 		522D98A92396E62600359003 /* StocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D98A82396E62600359003 /* StocksViewController.swift */; };
 		522D98AB2396E63200359003 /* DetailStocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D98AA2396E63200359003 /* DetailStocksViewController.swift */; };
 		522D98AD2396E72200359003 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D98AC2396E72200359003 /* UserInfo.swift */; };
 		522D98AF2396E73400359003 /* AppleStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D98AE2396E73400359003 /* AppleStock.swift */; };
+		52E0ACA523996D5E007CE2E0 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0ACA423996D5E007CE2E0 /* Bundle+Extension.swift */; };
 		577E5BEC21BA8BA10083EB97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E5BEB21BA8BA10083EB97 /* AppDelegate.swift */; };
 		577E5BEE21BA8BA10083EB97 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E5BED21BA8BA10083EB97 /* PeopleViewController.swift */; };
 		577E5BF121BA8BA10083EB97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BEF21BA8BA10083EB97 /* Main.storyboard */; };
@@ -20,10 +23,18 @@
 		577E5BF621BA8BA20083EB97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BF421BA8BA20083EB97 /* LaunchScreen.storyboard */; };
 		577E5BFF21BA8C3B0083EB97 /* userinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BFE21BA8C3B0083EB97 /* userinfo.json */; };
 		577E5C0121BA8C5C0083EB97 /* applstockinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5C0021BA8C5C0083EB97 /* applstockinfo.json */; };
+		B571CF1E0839B551B6F2DAE2 /* Pods_PeopleAndAppleStockPrices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6346019C43C2EE1E4E6B2970 /* Pods_PeopleAndAppleStockPrices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		5218A78B2397503A00200B0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 577E5BE021BA8BA10083EB97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 577E5BE721BA8BA10083EB97;
+			remoteInfo = PeopleAndAppleStockPrices;
+		};
+		5218A79B23988A6D00200B0A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 577E5BE021BA8BA10083EB97 /* Project object */;
 			proxyType = 1;
@@ -36,11 +47,16 @@
 		5218A7862397503A00200B0A /* PeopleAndAppleStockPricesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeopleAndAppleStockPricesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5218A7882397503A00200B0A /* PeopleAndAppleStockPricesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAndAppleStockPricesTests.swift; sourceTree = "<group>"; };
 		5218A78A2397503A00200B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5218A79623988A6D00200B0A /* PeopleAndAppleStockPricesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeopleAndAppleStockPricesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5218A79823988A6D00200B0A /* PeopleAndAppleStockPricesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAndAppleStockPricesUITests.swift; sourceTree = "<group>"; };
+		5218A79A23988A6D00200B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5218A7A423988C4900200B0A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		522D98A62396E61B00359003 /* DetailPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPeopleViewController.swift; sourceTree = "<group>"; };
 		522D98A82396E62600359003 /* StocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewController.swift; sourceTree = "<group>"; };
 		522D98AA2396E63200359003 /* DetailStocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStocksViewController.swift; sourceTree = "<group>"; };
 		522D98AC2396E72200359003 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		522D98AE2396E73400359003 /* AppleStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleStock.swift; sourceTree = "<group>"; };
+		52E0ACA423996D5E007CE2E0 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		577E5BE821BA8BA10083EB97 /* PeopleAndAppleStockPrices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleAndAppleStockPrices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		577E5BEB21BA8BA10083EB97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		577E5BED21BA8BA10083EB97 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +66,9 @@
 		577E5BF721BA8BA20083EB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577E5BFE21BA8C3B0083EB97 /* userinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userinfo.json; sourceTree = "<group>"; };
 		577E5C0021BA8C5C0083EB97 /* applstockinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = applstockinfo.json; sourceTree = "<group>"; };
+		6346019C43C2EE1E4E6B2970 /* Pods_PeopleAndAppleStockPrices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeopleAndAppleStockPrices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCF3D4111984D748487AF4C /* Pods-PeopleAndAppleStockPrices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleAndAppleStockPrices.debug.xcconfig"; path = "Target Support Files/Pods-PeopleAndAppleStockPrices/Pods-PeopleAndAppleStockPrices.debug.xcconfig"; sourceTree = "<group>"; };
+		C4EA51A9D1620BCA45DF086B /* Pods-PeopleAndAppleStockPrices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleAndAppleStockPrices.release.xcconfig"; path = "Target Support Files/Pods-PeopleAndAppleStockPrices/Pods-PeopleAndAppleStockPrices.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,16 +79,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		577E5BE521BA8BA10083EB97 /* Frameworks */ = {
+		5218A79323988A6D00200B0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		577E5BE521BA8BA10083EB97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B571CF1E0839B551B6F2DAE2 /* Pods_PeopleAndAppleStockPrices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B9F93482A25268AFA80CE37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADCF3D4111984D748487AF4C /* Pods-PeopleAndAppleStockPrices.debug.xcconfig */,
+				C4EA51A9D1620BCA45DF086B /* Pods-PeopleAndAppleStockPrices.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5218A7872397503A00200B0A /* PeopleAndAppleStockPricesTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,12 +115,25 @@
 			path = PeopleAndAppleStockPricesTests;
 			sourceTree = "<group>";
 		};
+		5218A79723988A6D00200B0A /* PeopleAndAppleStockPricesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5218A79823988A6D00200B0A /* PeopleAndAppleStockPricesUITests.swift */,
+				5218A79A23988A6D00200B0A /* Info.plist */,
+			);
+			path = PeopleAndAppleStockPricesUITests;
+			sourceTree = "<group>";
+		};
 		577E5BDF21BA8BA10083EB97 = {
 			isa = PBXGroup;
 			children = (
+				5218A7A423988C4900200B0A /* Podfile */,
 				577E5BEA21BA8BA10083EB97 /* PeopleAndAppleStockPrices */,
 				5218A7872397503A00200B0A /* PeopleAndAppleStockPricesTests */,
+				5218A79723988A6D00200B0A /* PeopleAndAppleStockPricesUITests */,
 				577E5BE921BA8BA10083EB97 /* Products */,
+				3B9F93482A25268AFA80CE37 /* Pods */,
+				61E5C09CDA91F7CAEC1E7C5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +142,7 @@
 			children = (
 				577E5BE821BA8BA10083EB97 /* PeopleAndAppleStockPrices.app */,
 				5218A7862397503A00200B0A /* PeopleAndAppleStockPricesTests.xctest */,
+				5218A79623988A6D00200B0A /* PeopleAndAppleStockPricesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +154,7 @@
 				522D98A62396E61B00359003 /* DetailPeopleViewController.swift */,
 				522D98A82396E62600359003 /* StocksViewController.swift */,
 				522D98AA2396E63200359003 /* DetailStocksViewController.swift */,
+				52E0ACA423996D5E007CE2E0 /* Bundle+Extension.swift */,
 				577E5BEF21BA8BA10083EB97 /* Main.storyboard */,
 				577E5BFD21BA8BE20083EB97 /* Supporting Files */,
 				577E5BF721BA8BA20083EB97 /* Info.plist */,
@@ -133,6 +184,14 @@
 			path = json;
 			sourceTree = "<group>";
 		};
+		61E5C09CDA91F7CAEC1E7C5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6346019C43C2EE1E4E6B2970 /* Pods_PeopleAndAppleStockPrices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,13 +213,33 @@
 			productReference = 5218A7862397503A00200B0A /* PeopleAndAppleStockPricesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		5218A79523988A6D00200B0A /* PeopleAndAppleStockPricesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5218A79D23988A6D00200B0A /* Build configuration list for PBXNativeTarget "PeopleAndAppleStockPricesUITests" */;
+			buildPhases = (
+				5218A79223988A6D00200B0A /* Sources */,
+				5218A79323988A6D00200B0A /* Frameworks */,
+				5218A79423988A6D00200B0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5218A79C23988A6D00200B0A /* PBXTargetDependency */,
+			);
+			name = PeopleAndAppleStockPricesUITests;
+			productName = PeopleAndAppleStockPricesUITests;
+			productReference = 5218A79623988A6D00200B0A /* PeopleAndAppleStockPricesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		577E5BE721BA8BA10083EB97 /* PeopleAndAppleStockPrices */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 577E5BFA21BA8BA20083EB97 /* Build configuration list for PBXNativeTarget "PeopleAndAppleStockPrices" */;
 			buildPhases = (
+				3E346586883F50132DC77862 /* [CP] Check Pods Manifest.lock */,
 				577E5BE421BA8BA10083EB97 /* Sources */,
 				577E5BE521BA8BA10083EB97 /* Frameworks */,
 				577E5BE621BA8BA10083EB97 /* Resources */,
+				DBF16E4320B791EA2EEBB8BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +264,10 @@
 						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = 577E5BE721BA8BA10083EB97;
 					};
+					5218A79523988A6D00200B0A = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 577E5BE721BA8BA10083EB97;
+					};
 					577E5BE721BA8BA10083EB97 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -205,6 +288,7 @@
 			targets = (
 				577E5BE721BA8BA10083EB97 /* PeopleAndAppleStockPrices */,
 				5218A7852397503A00200B0A /* PeopleAndAppleStockPricesTests */,
+				5218A79523988A6D00200B0A /* PeopleAndAppleStockPricesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -217,10 +301,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5218A79423988A6D00200B0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		577E5BE621BA8BA10083EB97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5218A7A523988C4900200B0A /* Podfile in Resources */,
 				577E5BFF21BA8C3B0083EB97 /* userinfo.json in Resources */,
 				577E5C0121BA8C5C0083EB97 /* applstockinfo.json in Resources */,
 				577E5BF621BA8BA20083EB97 /* LaunchScreen.storyboard in Resources */,
@@ -231,12 +323,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E346586883F50132DC77862 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeopleAndAppleStockPrices-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF16E4320B791EA2EEBB8BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PeopleAndAppleStockPrices/Pods-PeopleAndAppleStockPrices-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PeopleAndAppleStockPrices/Pods-PeopleAndAppleStockPrices-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PeopleAndAppleStockPrices/Pods-PeopleAndAppleStockPrices-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5218A7822397503A00200B0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5218A7892397503A00200B0A /* PeopleAndAppleStockPricesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5218A79223988A6D00200B0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5218A79923988A6D00200B0A /* PeopleAndAppleStockPricesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +389,7 @@
 				577E5BEE21BA8BA10083EB97 /* PeopleViewController.swift in Sources */,
 				522D98A72396E61B00359003 /* DetailPeopleViewController.swift in Sources */,
 				577E5BEC21BA8BA10083EB97 /* AppDelegate.swift in Sources */,
+				52E0ACA523996D5E007CE2E0 /* Bundle+Extension.swift in Sources */,
 				522D98A92396E62600359003 /* StocksViewController.swift in Sources */,
 				522D98AF2396E73400359003 /* AppleStock.swift in Sources */,
 				522D98AD2396E72200359003 /* UserInfo.swift in Sources */,
@@ -261,6 +404,11 @@
 			isa = PBXTargetDependency;
 			target = 577E5BE721BA8BA10083EB97 /* PeopleAndAppleStockPrices */;
 			targetProxy = 5218A78B2397503A00200B0A /* PBXContainerItemProxy */;
+		};
+		5218A79C23988A6D00200B0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 577E5BE721BA8BA10083EB97 /* PeopleAndAppleStockPrices */;
+			targetProxy = 5218A79B23988A6D00200B0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -323,6 +471,46 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeopleAndAppleStockPrices.app/PeopleAndAppleStockPrices";
+			};
+			name = Release;
+		};
+		5218A79E23988A6D00200B0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83DYP84L8W;
+				INFOPLIST_FILE = PeopleAndAppleStockPricesUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.pursuit.PeopleAndAppleStockPricesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeopleAndAppleStockPrices;
+			};
+			name = Debug;
+		};
+		5218A79F23988A6D00200B0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83DYP84L8W;
+				INFOPLIST_FILE = PeopleAndAppleStockPricesUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.pursuit.PeopleAndAppleStockPricesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeopleAndAppleStockPrices;
 			};
 			name = Release;
 		};
@@ -444,6 +632,7 @@
 		};
 		577E5BFB21BA8BA20083EB97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADCF3D4111984D748487AF4C /* Pods-PeopleAndAppleStockPrices.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +651,7 @@
 		};
 		577E5BFC21BA8BA20083EB97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4EA51A9D1620BCA45DF086B /* Pods-PeopleAndAppleStockPrices.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +676,15 @@
 			buildConfigurations = (
 				5218A78D2397503A00200B0A /* Debug */,
 				5218A78E2397503A00200B0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5218A79D23988A6D00200B0A /* Build configuration list for PBXNativeTarget "PeopleAndAppleStockPricesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5218A79E23988A6D00200B0A /* Debug */,
+				5218A79F23988A6D00200B0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

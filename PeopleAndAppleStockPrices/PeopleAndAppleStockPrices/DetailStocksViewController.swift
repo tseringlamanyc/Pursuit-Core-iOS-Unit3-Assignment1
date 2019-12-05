@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SAConfettiView
 
 class DetailStocksViewController: UIViewController {
     
@@ -18,22 +19,29 @@ class DetailStocksViewController: UIViewController {
     
     var stock: Stocks!
     
+    var confettiView = SAConfettiView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        confettiView = SAConfettiView(frame: self.view.bounds)
+        confettiView.alpha = 1
         dateLabel.text = stock.date
         openLabel.text = "Open: $\(stock.open.description)"
         closeLabel.text = "Close: $\(stock.close.description)"
-        changeImageAndBackground()
+                if stock.change < 0 {
+            imageView.image = #imageLiteral(resourceName: "thumbsDown")
+            confettiView.type = .Diamond
+        } else {
+            imageView.image = #imageLiteral(resourceName: "thumbsUp")
+            confettiView.type = .Triangle
+        }
+
+        
+        view.addSubview(confettiView)
+        confettiView.startConfetti()
     }
     
     func changeImageAndBackground() {
-        if stock.change < 0 {
-            imageView.image = #imageLiteral(resourceName: "thumbsDown")
-            view.backgroundColor = .red
-        } else {
-            imageView.image = #imageLiteral(resourceName: "thumbsUp")
-            view.backgroundColor = .green
-        }
     }
     
 
