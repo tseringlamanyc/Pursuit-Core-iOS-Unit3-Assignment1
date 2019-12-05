@@ -19,10 +19,20 @@ class DetailPeopleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        peopleImage.image = #imageLiteral(resourceName: "profileImage")
         nameText.text = "\(user.name.first) \(user.name.last)".capitalized
         emailText.text = user.email
         cityText.text = user.location.state.capitalized
+        
+        ImageCLient.getImage(urlString: user.picture.large) { [unowned self] (result) in
+                switch result {
+                case .failure(let error):
+                    print("\(error)")
+                case .success(let image):
+                    DispatchQueue.main.sync {
+                        self.peopleImage.image = image
+                    }
+            }
+        }
     }
 
 }

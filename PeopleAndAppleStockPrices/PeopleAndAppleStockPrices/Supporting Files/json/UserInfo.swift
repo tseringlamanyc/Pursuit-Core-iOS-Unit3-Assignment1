@@ -18,6 +18,7 @@ struct UserInfo: Decodable {
     let email: String
     let location: Location
     var fullName: String {return name.first + " " + name.last}
+    let picture: MultiMedia
 }
 
 struct Name: Decodable {
@@ -29,6 +30,10 @@ struct Name: Decodable {
 struct Location: Decodable {
     let city: String
     let state: String
+}
+
+struct MultiMedia: Decodable {
+    var large: String
 }
 
 extension UserData {
