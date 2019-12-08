@@ -30,10 +30,10 @@ class DetailStocksViewController: UIViewController {
         closeLabel.text = "Close: $\(stock.close.description)"
                 if stock.change < 0 {
             imageView.image = #imageLiteral(resourceName: "thumbsDown")
-            confettiView.type = .Diamond
+                    view.backgroundColor = .red
         } else {
             imageView.image = #imageLiteral(resourceName: "thumbsUp")
-            confettiView.type = .Triangle
+                    view.backgroundColor = .green
         }
 
         

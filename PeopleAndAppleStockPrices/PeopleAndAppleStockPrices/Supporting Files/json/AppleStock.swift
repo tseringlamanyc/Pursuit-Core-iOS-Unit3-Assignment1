@@ -14,6 +14,7 @@ struct Stocks: Codable {
     let open: Double
     let close: Double
     let change: Double
+    let label: String
 
 }
 
